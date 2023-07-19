@@ -1,0 +1,16 @@
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.main-content {
+  box-sizing: border-box;
+  padding: 40px;
+  max-width: 80%;
+  margin: auto;
+}

@@ -1,0 +1,27 @@
+<canvas id="myCanvas" width="1200" height="700"></canvas>
+
+<br>
+<input type="text" id="monInput" name="monInput" placeholder="Nom de la page" required />
+<br>
+<br>
+<button class="bouton1" (click)="addRect()">Ajouter le carré</button>
+
+<button class="RondAdd" (click)="addRond()">Ajouter le rond</button>
+<button class="boxAdd" (click)="addTextbox()">Ajouter la boîte de texte</button>
+<button class="Delete" (click)="deleteSelection()">Effacer</button>
+
+<br>
+<br>
+
+<!-- <button class="file">Test-fichier</button> -->
+<button class="nouvellePage" (click)="nouvellePage()">Nouvelle page</button>
+
+<br>
+<br>
+<button class="console">Publier</button>
+
+<button>Récupérer les données sélectionnées</button>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
