@@ -4,11 +4,17 @@ import {CanvasComponent} from "./components/canva/canvas.component";
 import { HttpClientModule} from "@angular/common/http";
 import { SharedModule} from "../shared/shared.module";
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { CanvaListComponent } from './components/canva-list/canva-list.component';
+import { CanvaListItemComponent } from './components/canva-list-item/canva-list-item.component';
+import { CoreModule} from "../core/core.module";
+import { RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
     CanvasComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    CanvaListComponent,
+    CanvaListItemComponent
   ],
   exports:[
     CanvasComponent
@@ -17,7 +23,9 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
   imports: [
     CommonModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    CoreModule,
+    RouterModule
   ],
   providers: [
 

@@ -1,5 +1,11 @@
-<div class="canva {{ListItem.id}}">
-  <h2> ListItem.name </h2>
-</div>
 
+<mat-card>
+  <a routerLink="['/editeur', ListItem.id]">Canva {{ListItem.id}}
+    <div class="canva {{ListItem.id}}">
+      <mat-card-title>
+        <h2>{{ListItem.name}}</h2>
+      </mat-card-title>
+    </div>
+  </a>
+</mat-card>
 

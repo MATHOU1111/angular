@@ -5,7 +5,7 @@ import {LandingPageComponent} from "./components/landing-page/landing-page.compo
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
-  {path: 'editor', component: CanvasComponent}
+  {path: 'editor/:id', component: CanvasComponent}
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
