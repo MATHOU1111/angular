@@ -24,11 +24,7 @@ export class CommentsComponent implements OnInit {
   }
 
   onLeaveComment() {
-    if (this.commentCtrl.invalid) {
-      return;
-    }
-    this.newComment.emit(this.commentCtrl.value);
-    this.commentCtrl.reset();
+    console.log("commentaire");
   }
 
 }

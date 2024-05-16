@@ -3,8 +3,9 @@ import { Observable, map } from "rxjs";
 import { Post } from "../../models/post.model";
 import { ActivatedRoute } from '@angular/router';
 import {PostsService} from "../../services/posts.services";
-import { SharedModule} from "../../../shared/shared.module";
+
 @Component({
+
   selector: 'app-post-list',
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.scss']
